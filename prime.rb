@@ -1,14 +1,11 @@
 def prime?(num)
   
   result = true
-  for i in 2..num - 1
-    if num % i == 0
-      result = false
-      break 
-    end
-  end
-    
-    return result 
+  (2..num-1).none? do |prime| num % prime == 0
+  result = false
+end
+
+return result
   
   
 end
