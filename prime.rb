@@ -5,6 +5,7 @@ def prime?(num)
     if num % i == 0
       result = false
     end
+  end
     
     return result 
   
