@@ -1,6 +1,12 @@
 def prime?(num)
   
-  (2..num-1).none? {|prime| num % prime == 0}
+  result = true
+  for i in 2..num - 1
+    if num % i == 0
+      result = false
+    end
+    
+    return result 
   
   
 end
